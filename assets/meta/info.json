@@ -1,0 +1,75 @@
+{
+  "bottle_name": "shelf_B_water_bottle_1_2_4",
+  "seed": 1001,
+  "steps": 993,
+  "n_frames": 993,
+  "phase_spans": {
+    "RETRACT_OUT": [
+      212,
+      248
+    ],
+    "NAV_TO_CHECKOUT": [
+      370,
+      908
+    ],
+    "ARM_RAISE": [
+      138,
+      208
+    ],
+    "RELEASE": [
+      939,
+      992
+    ],
+    "NAV_TO_GRASP": [
+      0,
+      137
+    ],
+    "ARM_FOLD": [
+      19,
+      125
+    ],
+    "PLACE": [
+      909,
+      938
+    ],
+    "CARRY_RAISE": [
+      249,
+      369
+    ],
+    "GRASP_CLOSE": [
+      209,
+      211
+    ]
+  },
+  "division": {
+    "code_pre_grasp": {
+      "start": 0,
+      "end": 137,
+      "phases": "through NAV_TO_GRASP (drive-in complete, before ARM_RAISE)"
+    },
+    "vla_grasp": {
+      "start": 138,
+      "end": 212,
+      "phases": "ARM_RAISE + GRASP_CLOSE until grasp_attached"
+    },
+    "code_transport": {
+      "phases": "RETRACT_OUT + CARRY_RAISE + NAV_TO_CHECKOUT"
+    },
+    "vla_place": {
+      "start": 909,
+      "end": 939,
+      "phases": "PLACE + RELEASE until gripper opens"
+    }
+  },
+  "cameras": [
+    "fetch_head",
+    "fetch_hand",
+    "checkout_camera"
+  ],
+  "result": {
+    "phase": "SolverPhase.SUCCESS",
+    "success": true,
+    "grasp_success": true,
+    "placement_success": true
+  }
+}

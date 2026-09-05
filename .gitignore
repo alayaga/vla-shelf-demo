@@ -1,0 +1,45 @@
+# === 密钥与凭据（切勿提交） ===
+tools/westc.local.env
+*.local.env
+**/*credentials*
+.env
+.env.*
+!.env.example
+!*.env.example
+
+# SSH / 密钥文件
+*.pem
+id_rsa
+id_rsa.*
+id_ed25519
+id_ed25519.*
+*.ppk
+
+# 部署本地覆盖（仅保留 *.example）
+deploy.env
+deploy.local.*
+aliyun.local.env
+deploy/.env
+
+# 日志
+sync_log.txt
+*.log
+
+# OS / IDE
+.DS_Store
+Thumbs.db
+Desktop.ini
+.vscode/
+.idea/
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+
+# 临时文件
+_verify_remote.py
+*.tmp
+*.swp
+*~

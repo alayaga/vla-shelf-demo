@@ -1,0 +1,144 @@
+{
+  "title": "SmartRetail Shelf Bottle — Hybrid VLA Demo",
+  "bottle_name": "shelf_B_water_bottle_1_2_4",
+  "seed": 1001,
+  "fps": 20,
+  "total_steps": 993,
+  "total_time_s": 49.65,
+  "cameras": [
+    "fetch_head",
+    "fetch_hand",
+    "checkout_camera"
+  ],
+  "instructions": {
+    "grasp": "Pick up the water bottle from the shelf.",
+    "place": "Place the water bottle onto the checkout counter."
+  },
+  "result": {
+    "phase": "SolverPhase.SUCCESS",
+    "success": true,
+    "grasp_success": true,
+    "placement_success": true
+  },
+  "phases": [
+    {
+      "id": "NAV_TO_GRASP",
+      "label_zh": "NAV TO GRASP",
+      "control": "code",
+      "step_start": 0,
+      "step_end": 137,
+      "time_start": 0.0,
+      "time_end": 6.85
+    },
+    {
+      "id": "ARM_FOLD",
+      "label_zh": "ARM FOLD",
+      "control": "code",
+      "step_start": 19,
+      "step_end": 125,
+      "time_start": 0.95,
+      "time_end": 6.25
+    },
+    {
+      "id": "ARM_RAISE",
+      "label_zh": "ARM RAISE",
+      "control": "vla",
+      "step_start": 138,
+      "step_end": 208,
+      "time_start": 6.9,
+      "time_end": 10.4
+    },
+    {
+      "id": "GRASP_CLOSE",
+      "label_zh": "GRASP CLOSE",
+      "control": "vla",
+      "step_start": 209,
+      "step_end": 211,
+      "time_start": 10.45,
+      "time_end": 10.55
+    },
+    {
+      "id": "RETRACT_OUT",
+      "label_zh": "RETRACT OUT",
+      "control": "code",
+      "step_start": 212,
+      "step_end": 248,
+      "time_start": 10.6,
+      "time_end": 12.4
+    },
+    {
+      "id": "CARRY_RAISE",
+      "label_zh": "CARRY RAISE",
+      "control": "code",
+      "step_start": 249,
+      "step_end": 369,
+      "time_start": 12.45,
+      "time_end": 18.45
+    },
+    {
+      "id": "NAV_TO_CHECKOUT",
+      "label_zh": "NAV TO CHECKOUT",
+      "control": "code",
+      "step_start": 370,
+      "step_end": 908,
+      "time_start": 18.5,
+      "time_end": 45.4
+    },
+    {
+      "id": "PLACE",
+      "label_zh": "PLACE",
+      "control": "vla",
+      "step_start": 909,
+      "step_end": 938,
+      "time_start": 45.45,
+      "time_end": 46.9
+    },
+    {
+      "id": "RELEASE",
+      "label_zh": "RELEASE",
+      "control": "vla",
+      "step_start": 939,
+      "step_end": 992,
+      "time_start": 46.95,
+      "time_end": 49.6
+    }
+  ],
+  "segments": [
+    {
+      "id": "code_pre_grasp",
+      "label_zh": "Code · 导航到站",
+      "control": "code",
+      "step_start": 0,
+      "step_end": 137,
+      "time_start": 0.0,
+      "time_end": 6.85
+    },
+    {
+      "id": "vla_grasp",
+      "label_zh": "VLA · 抓取",
+      "control": "vla",
+      "step_start": 138,
+      "step_end": 212,
+      "time_start": 6.9,
+      "time_end": 10.6
+    },
+    {
+      "id": "code_transport",
+      "label_zh": "Code · 搬运",
+      "control": "code",
+      "step_start": 212,
+      "step_end": 908,
+      "time_start": 10.6,
+      "time_end": 45.4
+    },
+    {
+      "id": "vla_place",
+      "label_zh": "VLA · 放置",
+      "control": "vla",
+      "step_start": 909,
+      "step_end": 939,
+      "time_start": 45.45,
+      "time_end": 46.95
+    }
+  ]
+}

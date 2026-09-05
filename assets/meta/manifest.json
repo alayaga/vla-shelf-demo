@@ -1,0 +1,26 @@
+{
+  "fetch_head": {
+    "width": 640,
+    "height": 640,
+    "fps": 20,
+    "duration_s": 49.65,
+    "frames": 993,
+    "sha256": "6003e8073c47f9868059e6971151c457cd269d85d5a9e70dec4b5c809866f54e"
+  },
+  "fetch_hand": {
+    "width": 640,
+    "height": 640,
+    "fps": 20,
+    "duration_s": 49.65,
+    "frames": 993,
+    "sha256": "af7da179dff1a52e6ca3e97a6e0f8898db7643f52b7d55569fd5a4866e0cce39"
+  },
+  "checkout_camera": {
+    "width": 1280,
+    "height": 720,
+    "fps": 20,
+    "duration_s": 49.65,
+    "frames": 993,
+    "sha256": "0de6112d603510a4d0e73837eed4841d9da7155f2fd830f7b249dbb5a13a0388"
+  }
+}
